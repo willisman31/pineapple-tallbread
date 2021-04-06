@@ -3,11 +3,30 @@
  * @author Willis
  * @version 4.4.2021
  */
-public class Piece {
+public abstract class Piece {
 
-	private String name;
-	private Color color;
+	private String name; // name is used sparingly, ex. queen's rook
+	private boolean isWhite;
 	
-	Piece() {}
+	Piece() {
+		
+	}
 	
+	/**
+	 * 
+	 * @return
+	 */
+	String getName() {
+		return this.name;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	boolean getColor() {
+		return this.isWhite;
+	}
+	
+	abstract void move();
 }

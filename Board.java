@@ -12,6 +12,7 @@ public class Board {
 	 */
 	Board() {
 		// TODO
+		
 	}
 	
 	/**

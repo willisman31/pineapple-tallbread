@@ -12,7 +12,12 @@ public class King extends Piece {
 		// TODO
 	}
 	
-	
+	/**
+	 * 
+	 */
+	void move() {
+		// TODO
+	}
 	
 	
 	

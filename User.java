@@ -1,7 +1,7 @@
 /**
  * User superclass.
  * @author Willis
- * @version 4.4.2021
+ * @version 4.6.2021
  */
 public class User {
 
@@ -73,5 +73,13 @@ public class User {
 	 */
 	public void incrementRanking(int addTo) {
 		this.ranking += addTo;
+	}
+	
+	/**
+	 * 
+	 * @param takeFrom
+	 */
+	public void decrementRanking(int takeFrom) {
+		this.ranking -= takeFrom;
 	}
 }
