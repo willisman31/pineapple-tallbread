@@ -1,2 +1,2 @@
 # pineapple-tallbread
-Chess game
+Java build of Chess.  Uses Swing for UI.
