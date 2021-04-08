@@ -14,10 +14,10 @@ public class Game {
 	}
 	
 	/**
-	 * 
+	 * All game logic.
 	 */
 	static void play() {
-		
+		Board board = new Board();
 	}
 	
 	
