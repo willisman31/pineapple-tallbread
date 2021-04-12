@@ -5,8 +5,9 @@
  */
 public class User {
 
-	private String name; 
+	private String name, userID; 
 	private int ranking; // traditional chess ranking.
+	private User[] users;
 	
 	/**
 	 * Default constructor.
@@ -18,16 +19,20 @@ public class User {
 	
 	/**
 	 * Explicit, 2-arg constructor.
+	 * 
 	 * @param name user's name.
 	 * @param ranking user's ranking.
 	 */
 	User(String name, int ranking) {
+		// TODO
+		this.userID = name;
 		this.name = name;
 		this.ranking = ranking;
 	}
 	
 	/**
 	 * Copy constructor.
+	 * 
 	 * @param user to be copied to new User instance.
 	 */
 	User(User user) {
@@ -37,6 +42,7 @@ public class User {
 	
 	/**
 	 * Name getter.
+	 * 
 	 * @return name of this.
 	 */
 	public String getName() {
@@ -45,6 +51,7 @@ public class User {
 	
 	/**
 	 * Ranking getter.
+	 * 
 	 * @return ranking of this.
 	 */
 	public int getRanking() {
@@ -53,6 +60,7 @@ public class User {
 	
 	/**
 	 * Ranking setter.
+	 * 
 	 * @param newRanking replaces current ranking.
 	 */
 	public void setRanking(int newRanking) {
@@ -61,6 +69,7 @@ public class User {
 	
 	/**
 	 * Name setter.
+	 * 
 	 * @param name replaces current name.
 	 */
 	public void setName(String name) {
@@ -69,6 +78,7 @@ public class User {
 	
 	/**
 	 * Increments ranking by this amount.
+	 * 
 	 * @param addTo add this amount to current ranking.
 	 */
 	public void incrementRanking(int addTo) {
@@ -76,10 +86,46 @@ public class User {
 	}
 	
 	/**
+	 * Decrease ranking by amount of takeFrom.
 	 * 
-	 * @param takeFrom
+	 * @param takeFrom amount to decrement ranking.
 	 */
 	public void decrementRanking(int takeFrom) {
 		this.ranking -= takeFrom;
 	}
+	
+	/**
+	 * User ID getter.
+	 * 
+	 * @return userID.
+	 */
+	public String getUserID() {
+		return this.userID;
+	}
+	
+	
+	/**
+	 * Getter for array of all users.
+	 * 
+	 * @return array of all users.
+	 */
+	public User[] getUsers() {
+		return this.users;
+	}
+	
+	/**
+	 * Adds user to array of users.
+	 * 
+	 * @param user to add.
+	 * @return whether addition was successful.
+	 */
+	public boolean addUser(User user) {
+		return false;
+	}
+	
+	public int search(User user) {
+		// TODO
+		return -1;
+	}
+	
 }
