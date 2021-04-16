@@ -16,16 +16,16 @@ public class Board {
 		for (int i = 0; i < 8; i++) {
 			for (int j = 0; j < 8; j++) {
 				if (i % 7 == 0) {
-					board[i][j] = new Rook();
-					board[i][j] = new Knight();
-					board[i][j] = new Bishop();
-					board[i][j] = new King();
-					board[i][j] = new Queen();
-					board[i][j] = new Bishop();
-					board[i][j] = new Knight();
-					board[i][j] = new Rook();
+					board[i][j] = new Piece();
+					board[i][j] = new Piece();
+					board[i][j] = new Piece();
+					board[i][j] = new Piece();
+					board[i][j] = new Piece();
+					board[i][j] = new Piece();
+					board[i][j] = new Piece();
+					board[i][j] = new Piece();
 				} else if (i == 1 || i == 7) {
-					board[i][j] = new Pawn();
+					board[i][j] = new Piece();
 				} else {
 					board[i][j] = null;
 				}

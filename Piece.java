@@ -3,12 +3,20 @@
  * @author Willis
  * @version 4.4.2021
  */
-public abstract class Piece {
+public class Piece {
 
 	private String name; // name is used sparingly, ex. queen's rook
 	private boolean isWhite;
 	
+	/**
+	 * Default constructor.
+	 */
 	Piece() {
+		
+	}
+	
+	
+	Piece(String type) {
 		
 	}
 	
@@ -28,5 +36,10 @@ public abstract class Piece {
 		return this.isWhite;
 	}
 	
-	abstract void move();
+	/**
+	 * 
+	 */
+	void move() {
+		 
+	 }
 }
