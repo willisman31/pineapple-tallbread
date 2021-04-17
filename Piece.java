@@ -5,41 +5,46 @@
  */
 public class Piece {
 
-	private String name; // name is used sparingly, ex. queen's rook
+	private PieceType name; 
 	private boolean isWhite;
+	 
 	
 	/**
 	 * Default constructor.
+	 * Creates white pawn by default.
 	 */
 	Piece() {
-		
-	}
-	
-	
-	Piece(String type) {
-		
+		this.name = PieceType.PAWN;
+		this.isWhite = true;
 	}
 	
 	/**
+	 * Parameterized constructor; 2-arg constructor.
 	 * 
-	 * @return
+	 * @param type Piece type.
+	 * @param color piece color- true is white.
 	 */
-	String getName() {
+	Piece(PieceType type, boolean color) {
+		this.name = type;
+		this.isWhite = color;
+	}
+	
+	/**
+	 * PieceType getter.
+	 * 
+	 * @return type of piece.
+	 */
+	PieceType getName() {
 		return this.name;
 	}
 	
 	/**
+	 * Color getter.
 	 * 
-	 * @return
+	 * @return true if white, false if black.
 	 */
 	boolean getColor() {
 		return this.isWhite;
 	}
 	
-	/**
-	 * 
-	 */
-	void move() {
-		 
-	 }
 }

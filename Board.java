@@ -15,6 +15,8 @@ public class Board {
 		this.board = new Piece[8][8];
 		for (int i = 0; i < 8; i++) {
 			for (int j = 0; j < 8; j++) {
+				// TODO
+				// revise piece types
 				if (i % 7 == 0) {
 					board[i][j] = new Piece();
 					board[i][j] = new Piece();
